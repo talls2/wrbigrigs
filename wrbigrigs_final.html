@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WR Big Rigs — Heavy Truck Repair & Custom Paint</title>
+<title>WR Big Rig — Heavy Truck Repair & Custom Paint</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&family=Barlow+Condensed:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
   :root { --green:#1a5c2a; --green-light:#247a39; --green-dark:#0f3718; --black:#0d0d0d; --white:#f5f5f0; --gray:#1e1e1e; --gray-mid:#555; --gray-light:#bbb; }
@@ -14,7 +14,7 @@
   /* NAV */
   nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; align-items:center; justify-content:space-between; padding:0 4rem; height:72px; background:rgba(10,10,10,0.94); backdrop-filter:blur(10px); border-bottom:2px solid var(--green); }
   .nav-logo { display:flex; align-items:center; text-decoration:none; }
-  .nav-logo img { height:48px; width:auto; display:block; object-fit:contain; }
+  .nav-logo img { height:85px; width:auto; display:block; object-fit:contain; }
   .nav-links { display:flex; gap:2.5rem; list-style:none; }
   .nav-links a { color:var(--gray-light); text-decoration:none; font-family:'Barlow Condensed'; font-size:0.95rem; letter-spacing:0.12em; text-transform:uppercase; transition:color 0.2s; }
   .nav-links a:hover { color:var(--white); }
@@ -25,7 +25,7 @@
   #hero { min-height:100vh; position:relative; display:flex; align-items:flex-end; overflow:hidden; }
   .hero-video-wrap { position:absolute; inset:0; overflow:hidden; }
   .hero-video-wrap video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:brightness(0.4); z-index:1; }
-  .hero-fallback { position:absolute; inset:0; background:url('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.05.08%20PM.jpeg') center 30%/cover; filter:brightness(0.45); z-index:0; }
+  .hero-fallback { position:absolute; inset:0; background:url('src/images/greentruckfront_wr.jpeg') center 30%/cover; filter:brightness(0.45); z-index:0; }
   .hero-overlay { position:absolute; inset:0; z-index:2; background:linear-gradient(to top,rgba(0,0,0,0.97) 0%,rgba(0,0,0,0.25) 55%,rgba(0,0,0,0.05) 100%); }
   .hero-content { position:relative; z-index:3; width:100%; padding:0 4rem 5rem; animation:fadeUp 0.9s ease both; }
   .hero-eyebrow { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.85rem; letter-spacing:0.35em; text-transform:uppercase; color:#4db86a; display:flex; align-items:center; gap:12px; margin-bottom:1.2rem; }
@@ -51,7 +51,7 @@
   .section-desc { font-size:1.05rem; color:var(--gray-light); max-width:540px; line-height:1.7; margin-bottom:3rem; }
 
   #featured { background:#111; padding:0; display:grid; grid-template-columns:1fr 1fr; min-height:520px; }
-  .featured-img { position:relative; overflow:hidden; background:url('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.05.08%20PM%20%281%29.jpeg') center/cover; min-height:420px; }
+  .featured-img { position:relative; overflow:hidden; background:url('src/images/greentruckback_wr.jpeg') center/cover; min-height:420px; }
   .featured-img::after { content:''; position:absolute; inset:0; background:linear-gradient(to right,rgba(0,0,0,0) 50%,#111 100%); }
   .featured-text { padding:5rem 4rem; display:flex; flex-direction:column; justify-content:center; background:#111; }
   .featured-text h2 { font-family:'Bebas Neue',sans-serif; font-size:3rem; line-height:1; margin-bottom:1rem; }
@@ -134,6 +134,7 @@
   .contact-form textarea { resize:vertical; min-height:120px; }
   .contact-form select option { background:#1e1e1e; }
 
+  .footer-logo img { height:32px; width:auto; display:block; opacity:0.85; }
   footer { background:var(--black); border-top:2px solid var(--green); padding:2.5rem 4rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
   .footer-brand { font-family:'Bebas Neue',sans-serif; font-size:1.3rem; letter-spacing:0.1em; }
   .footer-brand span { color:#4db86a; }
@@ -173,7 +174,7 @@
 
 <nav>
   <a href="#" class="nav-logo">
-    <img src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/Artboard%203.png" alt="WR Big Rigs">
+    <img src="src/images/logowrbigrigs.png" alt="WR Big Rig">
   </a>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
@@ -189,7 +190,7 @@
 <section id="hero">
   <div class="hero-video-wrap">
     <video autoplay muted loop playsinline>
-      <source src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/bg-video.mp4" type="video/mp4">
+      <source src="src/videos/bg-video.mp4" type="video/mp4">
     </video>
     <div class="hero-fallback"></div>
   </div>
@@ -219,7 +220,7 @@
   <div class="featured-text">
     <div class="section-label">Our Work Speaks</div>
     <h2>Restoration.<br>Fabrication.<br>Perfection.</h2>
-    <p style="margin-top:1rem;">From complete truck restorations to custom paint on tanker fleets &mdash; the WR Big Rigs team handles it all with precision. Every vehicle that leaves our shop looks and runs like new.</p>
+    <p style="margin-top:1rem;">From complete truck restorations to custom paint on tanker fleets &mdash; the WR Big Rig team handles it all with precision. Every vehicle that leaves our shop looks and runs like new.</p>
     <a href="#gallery" class="btn-primary" style="margin-top:2rem;width:fit-content;">View Full Gallery</a>
   </div>
 </div>
@@ -229,12 +230,12 @@
   <h2 class="section-title">Our Services</h2>
   <p class="section-desc">From custom fleet paint to major collision repair, we handle every job with the same attention to detail &mdash; no matter the size of the rig.</p>
   <div class="services-grid">
-    <div class="service-card" onclick="openLightbox('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.07.25%20PM%20%282%29.jpeg')"><div class="service-card-bg" style="background-image:url('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.07.25%20PM%20%282%29.jpeg')"></div><div class="service-card-overlay"></div><div class="service-card-border"></div><div class="service-card-content"><div class="service-title">&#127912; Custom Painting</div><p class="service-desc">Full custom paint jobs for semi-trucks, tankers, and big rigs. Single colors, fleet graphics, or full custom designs.</p></div></div>
-    <div class="service-card" onclick="openLightbox('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.26.19%20PM%20%282%29.jpeg')"><div class="service-card-bg" style="background-image:url('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.26.19%20PM%20%282%29.jpeg')"></div><div class="service-card-overlay"></div><div class="service-card-border"></div><div class="service-card-content"><div class="service-title">&#128295; Collision Repair</div><p class="service-desc">Certified technicians restore your truck to factory condition. Frame straightening, panel replacement, full structural repair.</p></div></div>
-    <div class="service-card" onclick="openLightbox('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.06.24%20PM%20%281%29.jpeg')"><div class="service-card-bg" style="background-image:url('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.06.24%20PM%20%281%29.jpeg')"></div><div class="service-card-overlay"></div><div class="service-card-border"></div><div class="service-card-content"><div class="service-title">&#127959; Heavy Equipment</div><p class="service-desc">We paint loaders, excavators, cranes, and heavy machinery. Any size, any color, any brand.</p></div></div>
-    <div class="service-card" onclick="openLightbox('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.07.57%20PM%20%281%29.jpeg')"><div class="service-card-bg" style="background-image:url('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.07.57%20PM%20%281%29.jpeg')"></div><div class="service-card-overlay"></div><div class="service-card-border"></div><div class="service-card-content"><div class="service-title">&#128666; Fleet Services</div><p class="service-desc">Keep your entire fleet looking sharp and road-ready. Volume pricing available for fleet operators and owner-operators.</p></div></div>
-    <div class="service-card" onclick="openLightbox('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.05.08%20PM%20%282%29.jpeg')"><div class="service-card-bg" style="background-image:url('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.05.08%20PM%20%282%29.jpeg')"></div><div class="service-card-overlay"></div><div class="service-card-border"></div><div class="service-card-content"><div class="service-title">&#9881; Body Work &amp; Fabrication</div><p class="service-desc">Dent removal, metal fabrication, cab and chassis body work. We fix the damage others turn away.</p></div></div>
-    <div class="service-card" onclick="openLightbox('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.26.19%20PM%20%281%29.jpeg')"><div class="service-card-bg" style="background-image:url('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.26.19%20PM%20%281%29.jpeg')"></div><div class="service-card-overlay"></div><div class="service-card-border"></div><div class="service-card-content"><div class="service-title">&#128737; Insurance Claims</div><p class="service-desc">We work directly with all major carriers to streamline your claim and get your truck back on the road faster.</p></div></div>
+    <div class="service-card" onclick="openLightbox('src/images/devan2yyellowpostpainting_wr.jpeg')"><div class="service-card-bg" style="background-image:url('src/images/semi-truck-custom-paint-job_wr.jpg')"></div><div class="service-card-overlay"></div><div class="service-card-border"></div><div class="service-card-content"><div class="service-title">&#127912; Custom Painting</div><p class="service-desc">Full custom paint jobs for semi-trucks, tankers, and big rigs. Single colors, fleet graphics, or full custom designs.</p></div></div>
+    <div class="service-card" onclick="openLightbox('src/images/trailerpaintinginsidestore_wr.jpeg')"><div class="service-card-bg" style="background-image:url('src/images/trailerpaintinginsidestore_wr.jpeg')"></div><div class="service-card-overlay"></div><div class="service-card-border"></div><div class="service-card-content"><div class="service-title">&#128295; Collision Repair</div><p class="service-desc">Certified technicians restore your truck to factory condition. Frame straightening, panel replacement, full structural repair.</p></div></div>
+    <div class="service-card" onclick="openLightbox('src/images/tractorpostpaintingfront_wr.jpeg')"><div class="service-card-bg" style="background-image:url('src/images/tractorpostpaintingfront_wr.jpeg')"></div><div class="service-card-overlay"></div><div class="service-card-border"></div><div class="service-card-content"><div class="service-title">&#127959; Heavy Equipment</div><p class="service-desc">We paint loaders, excavators, cranes, and heavy machinery. Any size, any color, any brand.</p></div></div>
+    <div class="service-card" onclick="openLightbox('src/images/yellowtruckback_wr.jpeg')"><div class="service-card-bg" style="background-image:url('src/images/yellowtruckback_wr.jpeg')"></div><div class="service-card-overlay"></div><div class="service-card-border"></div><div class="service-card-content"><div class="service-title">&#128666; Fleet Services</div><p class="service-desc">Keep your entire fleet looking sharp and road-ready. Volume pricing available for fleet operators and owner-operators.</p></div></div>
+    <div class="service-card" onclick="openLightbox('src/images/greentruckpostpainting_wr.jpeg')"><div class="service-card-bg" style="background-image:url('src/images/greentruckpostpainting_wr.jpeg')"></div><div class="service-card-overlay"></div><div class="service-card-border"></div><div class="service-card-content"><div class="service-title">&#9881; Body Work &amp; Fabrication</div><p class="service-desc">Dent removal, metal fabrication, cab and chassis body work. We fix the damage others turn away.</p></div></div>
+    <div class="service-card" onclick="openLightbox('src/images/trailerpainting_wr.jpeg')"><div class="service-card-bg" style="background-image:url('src/images/trailerpainting_wr.jpeg')"></div><div class="service-card-overlay"></div><div class="service-card-border"></div><div class="service-card-content"><div class="service-title">&#128737; Insurance Claims</div><p class="service-desc">We work directly with all major carriers to streamline your claim and get your truck back on the road faster.</p></div></div>
   </div>
 </section>
 
@@ -250,30 +251,30 @@
     <button class="filter-btn" onclick="filterGallery('shop',this)">In the Shop</button>
   </div>
   <div class="gallery-grid">
-    <div class="gallery-item tall" data-cat="trucks" onclick="openLightbox('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.05.08%20PM%20%288%29.jpeg')"><img src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.05.08%20PM%20%288%29.jpeg" alt="Green truck restoration" loading="lazy"></div>
-    <div class="gallery-item"      data-cat="trucks" onclick="openLightbox('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.23.55%20PM.jpeg')"><img src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.23.55%20PM.jpeg" alt="Peterbilt tanker front" loading="lazy"></div>
-    <div class="gallery-item"      data-cat="trucks" onclick="openLightbox('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.05.08%20PM%20%287%29.jpeg')"><img src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.05.08%20PM%20%287%29.jpeg" alt="Peterbilt working" loading="lazy"></div>
-    <div class="gallery-item"      data-cat="trucks" onclick="openLightbox('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.07.57%20PM%20%282%29.jpeg')"><img src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.07.57%20PM%20%282%29.jpeg" alt="Completed tanker" loading="lazy"></div>
-    <div class="gallery-item wide" data-cat="trucks" onclick="openLightbox('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.07.57%20PM%20%283%29.jpeg')"><img src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.07.57%20PM%20%283%29.jpeg" alt="Devaney tanker complete" loading="lazy"></div>
-    <div class="gallery-item"      data-cat="trucks" onclick="openLightbox('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.07.57%20PM.jpeg')"><img src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.07.57%20PM.jpeg" alt="Tanker undercarriage" loading="lazy"></div>
-    <div class="gallery-item"      data-cat="trucks" onclick="openLightbox('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.07.57%20PM%20%284%29.jpeg')"><img src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.07.57%20PM%20%284%29.jpeg" alt="Tanker green detail" loading="lazy"></div>
-    <div class="gallery-item"      data-cat="trucks" onclick="openLightbox('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.05.08%20PM%20%285%29.jpeg')"><img src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.05.08%20PM%20%285%29.jpeg" alt="Green fuel tanks" loading="lazy"></div>
-    <div class="gallery-item"      data-cat="trucks" onclick="openLightbox('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.05.08%20PM%20%284%29.jpeg')"><img src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.05.08%20PM%20%284%29.jpeg" alt="Truck chassis" loading="lazy"></div>
-    <div class="gallery-item tall" data-cat="equipment" onclick="openLightbox('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.06.24%20PM%20%282%29.jpeg')"><img src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.06.24%20PM%20%282%29.jpeg" alt="CAT loader finished" loading="lazy"></div>
-    <div class="gallery-item"      data-cat="equipment" onclick="openLightbox('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.06.24%20PM.jpeg')"><img src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.06.24%20PM.jpeg" alt="CAT loader in booth" loading="lazy"></div>
-    <div class="gallery-item"      data-cat="equipment" onclick="openLightbox('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.06.24%20PM%20%283%29.jpeg')"><img src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.06.24%20PM%20%283%29.jpeg" alt="Equipment painting" loading="lazy"></div>
-    <div class="gallery-item"      data-cat="shop" onclick="openLightbox('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.23.56%20PM%20%282%29.jpeg')"><img src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.23.56%20PM%20%282%29.jpeg" alt="Red truck paint booth" loading="lazy"></div>
-    <div class="gallery-item"      data-cat="shop" onclick="openLightbox('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.23.56%20PM%20%283%29.jpeg')"><img src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.23.56%20PM%20%283%29.jpeg" alt="Classic truck restoration" loading="lazy"></div>
-    <div class="gallery-item"      data-cat="shop" onclick="openLightbox('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.07.25%20PM.jpeg')"><img src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.07.25%20PM.jpeg" alt="Tank being painted" loading="lazy"></div>
-    <div class="gallery-item"      data-cat="shop" onclick="openLightbox('https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.07.25%20PM%20%281%29.jpeg')"><img src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.07.25%20PM%20%281%29.jpeg" alt="Paint booth masking" loading="lazy"></div>
+    <div class="gallery-item tall" data-cat="trucks" onclick="openLightbox('src/images/devan2yyellowpostpaintinglateral_wr.jpeg')"><img src="src/images/devan2yyellowpostpaintinglateral_wr.jpeg" alt="Green truck restoration" loading="lazy"></div>
+    <div class="gallery-item"      data-cat="trucks" onclick="openLightbox('src/images/greentractorfront_wr.jpeg')"><img src="src/images/greentractorfront_wr.jpeg" alt="Peterbilt tanker front" loading="lazy"></div>
+    <div class="gallery-item"      data-cat="trucks" onclick="openLightbox('src/images/devan2yyellowpostpaintingfront_wr.jpeg')"><img src="src/images/devan2yyellowpostpaintingfront_wr.jpeg" alt="Peterbilt working" loading="lazy"></div>
+    <div class="gallery-item"      data-cat="trucks" onclick="openLightbox('src/images/lightbluetruckback_wr.jpeg')"><img src="src/images/lightbluetruckback_wr.jpeg" alt="Completed tanker" loading="lazy"></div>
+    <div class="gallery-item wide" data-cat="trucks" onclick="openLightbox('src/images/lightbluetruckleftback_wr.jpeg')"><img src="src/images/lightbluetruckleftback_wr.jpeg" alt="Devaney tanker complete" loading="lazy"></div>
+    <div class="gallery-item"      data-cat="trucks" onclick="openLightbox('src/images/devan2yyellowpostpaintingback_wr.jpeg')"><img src="src/images/devan2yyellowpostpaintingback_wr.jpeg" alt="Tanker undercarriage" loading="lazy"></div>
+    <div class="gallery-item"      data-cat="trucks" onclick="openLightbox('src/images/lightbluetruckleftdoor_wr.jpeg')"><img src="src/images/lightbluetruckleftdoor_wr.jpeg" alt="Tanker green detail" loading="lazy"></div>
+    <div class="gallery-item"      data-cat="trucks" onclick="openLightbox('src/images/yellowtruckgreentankpostpainting_wr.jpeg')"><img src="src/images/yellowtruckgreentankpostpainting_wr.jpeg" alt="Green fuel tanks" loading="lazy"></div>
+    <div class="gallery-item"      data-cat="trucks" onclick="openLightbox('src/images/greytruckbackprepainting_wr.jpeg')"><img src="src/images/greytruckbackprepainting_wr.jpeg" alt="Truck chassis" loading="lazy"></div>
+    <div class="gallery-item tall" data-cat="equipment" onclick="openLightbox('src/images/tractorpostpaintingback_wr.jpeg')"><img src="src/images/tractorpostpaintingback_wr.jpeg" alt="CAT loader finished" loading="lazy"></div>
+    <div class="gallery-item"      data-cat="equipment" onclick="openLightbox('src/images/tractorpostpainting_wr.jpeg')"><img src="src/images/tractorpostpainting_wr.jpeg" alt="CAT loader in booth" loading="lazy"></div>
+    <div class="gallery-item"      data-cat="equipment" onclick="openLightbox('src/images/tractorpainting_wr.jpeg')"><img src="src/images/tractorpainting_wr.jpeg" alt="Equipment painting" loading="lazy"></div>
+    <div class="gallery-item"      data-cat="shop" onclick="openLightbox('src/images/paintingredtruck_wr.jpeg')"><img src="src/images/paintingredtruck_wr.jpeg" alt="Red truck paint booth" loading="lazy"></div>
+    <div class="gallery-item"      data-cat="shop" onclick="openLightbox('src/images/oldcaroopenmotorred_wr.jpeg')"><img src="src/images/oldcaroopenmotorred_wr.jpeg" alt="Classic truck restoration" loading="lazy"></div>
+    <div class="gallery-item"      data-cat="shop" onclick="openLightbox('src/images/devan2yyellowpainting_wr.jpeg')"><img src="src/images/devan2yyellowpainting_wr.jpeg" alt="Tank being painted" loading="lazy"></div>
+    <div class="gallery-item"      data-cat="shop" onclick="openLightbox('src/images/devan2yyellowpaintingback_wr.jpeg')"><img src="src/images/devan2yyellowpaintingback_wr.jpeg" alt="Paint booth masking" loading="lazy"></div>
   </div>
 </section>
 
 <section id="why">
   <div class="why-inner">
     <div class="why-img-stack">
-      <img class="why-img-main"   src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.07.57%20PM%20%281%29.jpeg" alt="Completed tanker">
-      <img class="why-img-accent" src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.05.08%20PM%20%281%29.jpeg" alt="Truck detail">
+      <img class="why-img-main"   src="src/images/yellowtruckback_wr.jpeg" alt="Completed tanker">
+      <img class="why-img-accent" src="src/images/greentruckback_wr.jpeg" alt="Truck detail">
     </div>
     <div>
       <div class="section-label">Why Choose WR</div>
@@ -292,7 +293,7 @@
 <section id="process">
   <div class="section-label">How It Works</div>
   <h2 class="section-title">Simple Process,<br>No Surprises</h2>
-  <p class="section-desc">Getting your rig repaired or painted is straightforward with WR Big Rigs.</p>
+  <p class="section-desc">Getting your rig repaired or painted is straightforward with WR Big Rig.</p>
   <div class="process-steps">
     <div class="step"><div class="step-circle">1</div><h4>Contact Us</h4><p>Call or fill out our quote form. Describe your truck, the service needed, and your timeline.</p></div>
     <div class="step"><div class="step-circle">2</div><h4>Free Estimate</h4><p>Bring your rig in and our specialists will provide a detailed, no-obligation estimate.</p></div>
@@ -309,19 +310,19 @@
 <section id="family">
   <div class="section-label">WR Automotive Group</div>
   <h2 class="section-title">Our Family<br>of Companies</h2>
-  <p class="section-desc">WR Big Rigs is the newest member of the WR Automotive Group &mdash; serving the South Shore since the early 2000s.</p>
+  <p class="section-desc">WR Big Rig is the newest member of the WR Automotive Group &mdash; serving the South Shore since the early 2000s.</p>
   <div class="family-cards">
     <a href="https://wrautobody.com" target="_blank" class="family-card">
-      <img class="family-card-img" src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.23.56%20PM.jpeg" alt="WR Auto Body">
+      <img class="family-card-img" src="./src/images/wrautobody.jpg" alt="WR Auto Body">
       <div class="family-card-body"><div class="tag">Auto Body</div><h3>WR Auto Body</h3><p>Collision repair and body work for passenger vehicles. Serving Whitman and the South Shore area.</p><div class="arrow">&#8594; wrautobody.com</div></div>
     </a>
     <a href="https://www.wrautosales.com" target="_blank" class="family-card">
-      <img class="family-card-img" src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.23.56%20PM%20%281%29.jpeg" alt="WR Auto Sales">
+      <img class="family-card-img" src="./src/images/frontwrcars.jpg" alt="WR Cars">
       <div class="family-card-body"><div class="tag">Auto Sales</div><h3>WR Auto Sales</h3><p>Quality pre-owned vehicles for every budget. Browse our inventory and find your next car today.</p><div class="arrow">&#8594; wrautosales.com</div></div>
     </a>
     <div class="family-card" style="border-top-color:var(--green);">
-      <img class="family-card-img" src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.23.55%20PM.jpeg" alt="WR Big Rigs">
-      <div class="family-card-body"><div class="tag">Heavy Trucks &mdash; New</div><h3>WR Big Rigs</h3><p>Collision repair, custom painting, and full body work for semi-trucks, tankers, and commercial vehicles.</p><div class="arrow" style="color:#4db86a;">You are here &#9733;</div></div>
+      <img class="family-card-img" src="src/images/greentractorfront_wr.jpeg" alt="WR Big Rig">
+      <div class="family-card-body"><div class="tag">Heavy Trucks &mdash; New</div><h3>WR Big Rig</h3><p>Collision repair, custom painting, and full body work for semi-trucks, tankers, and commercial vehicles.</p><div class="arrow" style="color:#4db86a;">You are here &#9733;</div></div>
     </div>
   </div>
 </section>
@@ -332,11 +333,11 @@
   <div class="contact-grid">
     <div class="contact-info">
       <p style="color:var(--gray-light);line-height:1.7;max-width:400px;margin-bottom:0.5rem;">Whether you need a full paint job, collision repair, or heavy equipment painting &mdash; reach out and we will find the best solution for your vehicle.</p>
-      <div class="contact-item"><h4>Phone</h4><a href="tel:+17815241182">(781) 524-1182</a></div>
-      <div class="contact-item"><h4>Email</h4><a href="mailto:info@wrbigrigs.com">info@wrbigrigs.com</a></div>
-      <div class="contact-item"><h4>Location</h4><p>South Shore Area, Massachusetts</p></div>
+      <div class="contact-item"><h4>Phone</h4><a href="tel:+17814474571">(781) 447-4571</a></div>
+      <div class="contact-item"><h4>Email</h4><a href="/cdn-cgi/l/email-protection#d2bbbcb4bd92a5a0b0bbb5a0bbb5a1fcb1bdbf"><span class="__cf_email__" data-cfemail="036a6d656c437471616a64716a64702d606c6e">contact@wrbigrig.com</span></a></div>
+      <div class="contact-item"><h4>Location</h4><p>Whitman, Massachusetts</p></div>
       <div class="contact-item"><h4>Hours</h4><p>Mon&ndash;Fri: 8AM &ndash; 6PM &nbsp;|&nbsp; Saturday: 9AM &ndash; 2PM</p></div>
-      <img src="https://raw.githubusercontent.com/talls2/wrbigrigs/main/WhatsApp%20Image%202026-02-17%20at%2011.06.24%20PM%20%282%29.jpeg" alt="Our shop" style="width:100%;height:180px;object-fit:cover;filter:brightness(0.75);margin-top:0.5rem;">
+      <img src="src/images/tractorpostpaintingback_wr.jpeg" alt="Our shop" style="width:100%;height:180px;object-fit:cover;filter:brightness(0.75);margin-top:0.5rem;">
     </div>
     <form class="contact-form" onsubmit="event.preventDefault();alert('Thank you! We will be in touch soon.');">
       <div class="form-row"><input type="text" placeholder="Your Name" required><input type="tel" placeholder="Phone Number" required></div>
@@ -350,12 +351,12 @@
 </section>
 
 <footer>
-  <div class="footer-brand">WR <span>Big Rigs</span> &mdash; Part of the WR Automotive Group</div>
+  <div class="footer-logo"><img src="src/images/logowrbigrigs.png" alt="WR Big Rig" style="height:150px;width:auto;display:block;"></div>
   <ul class="footer-links"><li><a href="#services">Services</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#process">Process</a></li><li><a href="#contact">Contact</a></li></ul>
-  <div class="footer-copy">&copy; 2025 WR Big Rigs. All rights reserved.</div>
+  <div class="footer-copy">&copy; 2025 WR Big Rig. All rights reserved.</div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function openLightbox(src) {
   document.getElementById('lightbox-img').src = src;
   document.getElementById('lightbox').classList.add('open');
@@ -368,12 +369,4 @@ function closeLightbox() {
 document.addEventListener('keydown', function(e) { if(e.key==='Escape') closeLightbox(); });
 function filterGallery(cat, btn) {
   document.querySelectorAll('.filter-btn').forEach(function(b){b.classList.remove('active');});
-  btn.classList.add('active');
-  document.querySelectorAll('.gallery-item').forEach(function(item){
-    if(cat==='all'||item.dataset.cat===cat){item.classList.remove('hidden');}
-    else{item.classList.add('hidden');}
-  });
-}
-</script>
-</body>
-</html>
+  btn.clas
