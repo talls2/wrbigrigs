@@ -14,7 +14,7 @@
   /* NAV */
   nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; align-items:center; justify-content:space-between; padding:0 4rem; height:72px; background:rgba(10,10,10,0.94); backdrop-filter:blur(10px); border-bottom:2px solid var(--green); }
   .nav-logo { display:flex; align-items:center; text-decoration:none; }
-  .nav-logo img { height:85px; width:auto; display:block; object-fit:contain; }
+  .nav-logo img { height:48px; width:auto; display:block; object-fit:contain; }
   .nav-links { display:flex; gap:2.5rem; list-style:none; }
   .nav-links a { color:var(--gray-light); text-decoration:none; font-family:'Barlow Condensed'; font-size:0.95rem; letter-spacing:0.12em; text-transform:uppercase; transition:color 0.2s; }
   .nav-links a:hover { color:var(--white); }
@@ -148,6 +148,18 @@
   .lightbox img { max-width:90vw; max-height:90vh; object-fit:contain; }
   .lightbox-close { position:absolute; top:1.5rem; right:2rem; font-size:2.5rem; color:var(--white); cursor:pointer; background:none; border:none; }
 
+
+  /* LEGACY BANNER */
+  #legacy-banner { background:rgba(26,92,42,0.35); border-top:2px solid rgba(77,184,106,0.5); border-bottom:2px solid rgba(77,184,106,0.5); padding:1.6rem 4rem; }
+  .legacy-inner { display:flex; align-items:center; gap:2rem; flex-wrap:wrap; }
+  .legacy-badge { font-family:'Bebas Neue',sans-serif; font-size:0.8rem; letter-spacing:0.2em; text-transform:uppercase; background:rgba(77,184,106,0.15); border:1px solid rgba(77,184,106,0.4); color:#4db86a; padding:6px 14px; white-space:nowrap; flex-shrink:0; }
+  .legacy-text { display:flex; flex-direction:column; gap:0.3rem; flex:1; min-width:200px; }
+  .legacy-text strong { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:1rem; letter-spacing:0.05em; text-transform:uppercase; color:var(--white); }
+  .legacy-text span { font-size:0.88rem; color:var(--gray-light); line-height:1.5; }
+  .legacy-cta { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.9rem; letter-spacing:0.1em; text-transform:uppercase; color:#4db86a; text-decoration:none; white-space:nowrap; transition:color 0.2s; flex-shrink:0; }
+  .legacy-cta:hover { color:var(--white); }
+  @media (max-width:900px) { #legacy-banner { padding:1.2rem 1.5rem; } }
+
   @keyframes fadeUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
 
   @media (max-width:900px) {
@@ -196,11 +208,11 @@
   </div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <div class="hero-eyebrow">WR Automotive Group &mdash; South Shore, MA</div>
-    <h1 class="hero-title">Heavy Trucks.<span class="accent">Built Tough.</span>Painted Right.</h1>
+    <div class="hero-eyebrow">M&amp;R Truck &amp; Equipment Refinish &mdash; Now Part of WR Automotive Group</div>
+    <h1 class="hero-title">Same Team.<span class="accent">Bigger Shop.</span>Even Better.</h1>
     <div class="hero-bottom">
       <div>
-        <p class="hero-sub">Professional collision repair, custom painting, and full-service body work for semi trucks, big rigs, tankers, and heavy equipment.</p>
+        <p class="hero-sub">M&amp;R and WR have joined forces. The same professionals you trusted at M&amp;R Truck &amp; Equipment Refinish are now operating under WR Big Rig &mdash; with more resources, more equipment, and the same uncompromising quality you already know.</p>
         <div class="hero-actions">
           <a href="#contact" class="btn-primary">Request a Free Quote</a>
           <a href="#gallery" class="btn-outline">See Our Work</a>
@@ -215,12 +227,24 @@
   </div>
 </section>
 
+<!-- LEGACY BANNER -->
+<div id="legacy-banner">
+  <div class="legacy-inner">
+    <div class="legacy-badge">&#10003; Still Us</div>
+    <div class="legacy-text">
+      <strong>Looking for M&amp;R Truck &amp; Equipment Refinish?</strong>
+      <span>You found us. Same crew, same shop, same quality &mdash; we are now WR Big Rig, part of the WR Automotive Group. Nothing changed except the name and what we can do for you.</span>
+    </div>
+    <a href="#contact" class="legacy-cta">Get a Quote &#8594;</a>
+  </div>
+</div>
+
 <div id="featured">
   <div class="featured-img"></div>
   <div class="featured-text">
-    <div class="section-label">Our Work Speaks</div>
-    <h2>Restoration.<br>Fabrication.<br>Perfection.</h2>
-    <p style="margin-top:1rem;">From complete truck restorations to custom paint on tanker fleets &mdash; the WR Big Rig team handles it all with precision. Every vehicle that leaves our shop looks and runs like new.</p>
+    <div class="section-label">A Legacy Reborn</div>
+    <h2>M&amp;R Craft.<br>WR Backing.<br>Better Than Ever.</h2>
+    <p style="margin-top:1rem;">For years, M&amp;R Truck &amp; Equipment Refinish built a reputation for precision work on the South Shore. WR acquired the operation &mdash; same expert crew, same shop, now with the full backing of the WR Automotive Group behind them.</p>
     <a href="#gallery" class="btn-primary" style="margin-top:2rem;width:fit-content;">View Full Gallery</a>
   </div>
 </div>
@@ -230,7 +254,7 @@
   <h2 class="section-title">Our Services</h2>
   <p class="section-desc">From custom fleet paint to major collision repair, we handle every job with the same attention to detail &mdash; no matter the size of the rig.</p>
   <div class="services-grid">
-    <div class="service-card" onclick="openLightbox('src/images/devan2yyellowpostpainting_wr.jpeg')"><div class="service-card-bg" style="background-image:url('src/images/semi-truck-custom-paint-job_wr.jpg')"></div><div class="service-card-overlay"></div><div class="service-card-border"></div><div class="service-card-content"><div class="service-title">&#127912; Custom Painting</div><p class="service-desc">Full custom paint jobs for semi-trucks, tankers, and big rigs. Single colors, fleet graphics, or full custom designs.</p></div></div>
+    <div class="service-card" onclick="openLightbox('src/images/devan2yyellowpostpainting_wr.jpeg')"><div class="service-card-bg" style="background-image:url('src/images/devan2yyellowpostpainting_wr.jpeg')"></div><div class="service-card-overlay"></div><div class="service-card-border"></div><div class="service-card-content"><div class="service-title">&#127912; Custom Painting</div><p class="service-desc">Full custom paint jobs for semi-trucks, tankers, and big rigs. Single colors, fleet graphics, or full custom designs.</p></div></div>
     <div class="service-card" onclick="openLightbox('src/images/trailerpaintinginsidestore_wr.jpeg')"><div class="service-card-bg" style="background-image:url('src/images/trailerpaintinginsidestore_wr.jpeg')"></div><div class="service-card-overlay"></div><div class="service-card-border"></div><div class="service-card-content"><div class="service-title">&#128295; Collision Repair</div><p class="service-desc">Certified technicians restore your truck to factory condition. Frame straightening, panel replacement, full structural repair.</p></div></div>
     <div class="service-card" onclick="openLightbox('src/images/tractorpostpaintingfront_wr.jpeg')"><div class="service-card-bg" style="background-image:url('src/images/tractorpostpaintingfront_wr.jpeg')"></div><div class="service-card-overlay"></div><div class="service-card-border"></div><div class="service-card-content"><div class="service-title">&#127959; Heavy Equipment</div><p class="service-desc">We paint loaders, excavators, cranes, and heavy machinery. Any size, any color, any brand.</p></div></div>
     <div class="service-card" onclick="openLightbox('src/images/yellowtruckback_wr.jpeg')"><div class="service-card-bg" style="background-image:url('src/images/yellowtruckback_wr.jpeg')"></div><div class="service-card-overlay"></div><div class="service-card-border"></div><div class="service-card-content"><div class="service-title">&#128666; Fleet Services</div><p class="service-desc">Keep your entire fleet looking sharp and road-ready. Volume pricing available for fleet operators and owner-operators.</p></div></div>
@@ -277,13 +301,13 @@
       <img class="why-img-accent" src="src/images/greentruckback_wr.jpeg" alt="Truck detail">
     </div>
     <div>
-      <div class="section-label">Why Choose WR</div>
-      <h2 class="section-title">The WR<br>Difference</h2>
-      <p class="section-desc">We are not just another body shop. We are the same team behind WR Auto Body and WR Auto Sales &mdash; a name the South Shore has trusted for over two decades.</p>
+      <div class="section-label">Why Choose WR Big Rig</div>
+      <h2 class="section-title">M&amp;R Roots.<br>WR Strength.</h2>
+      <p class="section-desc">This is not a startup. The team here spent years building M&amp;R Truck &amp; Equipment Refinish into one of the South Shore's most trusted heavy vehicle shops. WR brought them in &mdash; and gave them the resources to do even better work.</p>
       <div class="why-points">
         <div class="why-point"><div class="why-num">01</div><div class="why-text"><h4>Heavy Equipment Specialists</h4><p>Purpose-built shop and equipment for big rigs, tankers, and heavy machinery. We have the space, tools, and expertise.</p></div></div>
         <div class="why-point"><div class="why-num">02</div><div class="why-text"><h4>Fast Turnaround</h4><p>Downtime costs you money. We prioritize efficiency without cutting corners so your truck is back on the road fast.</p></div></div>
-        <div class="why-point"><div class="why-num">03</div><div class="why-text"><h4>Trusted Local Name</h4><p>Part of the WR Automotive family &mdash; the same people who have served the South Shore community for over 20 years.</p></div></div>
+        <div class="why-point"><div class="why-num">03</div><div class="why-text"><h4>M&amp;R Legacy, WR Resources</h4><p>Originally M&amp;R Truck &amp; Equipment Refinish, our team has been perfecting heavy vehicle refinishing on the South Shore for years &mdash; now with WR's full support behind every job.</p></div></div>
         <div class="why-point"><div class="why-num">04</div><div class="why-text"><h4>All Insurance Accepted</h4><p>We work with all major carriers and handle the paperwork so you can focus on your business.</p></div></div>
       </div>
     </div>
@@ -313,11 +337,11 @@
   <p class="section-desc">WR Big Rig is the newest member of the WR Automotive Group &mdash; serving the South Shore since the early 2000s.</p>
   <div class="family-cards">
     <a href="https://wrautobody.com" target="_blank" class="family-card">
-      <img class="family-card-img" src="./src/images/wrautobody.jpg" alt="WR Auto Body">
+      <img class="family-card-img" src="src/images/wrautobody.jpg" alt="WR Auto Body">
       <div class="family-card-body"><div class="tag">Auto Body</div><h3>WR Auto Body</h3><p>Collision repair and body work for passenger vehicles. Serving Whitman and the South Shore area.</p><div class="arrow">&#8594; wrautobody.com</div></div>
     </a>
     <a href="https://www.wrautosales.com" target="_blank" class="family-card">
-      <img class="family-card-img" src="./src/images/frontwrcars.jpg" alt="WR Cars">
+      <img class="family-card-img" src="src/images/frontwrcars.jpg" alt="WR Auto Sales">
       <div class="family-card-body"><div class="tag">Auto Sales</div><h3>WR Auto Sales</h3><p>Quality pre-owned vehicles for every budget. Browse our inventory and find your next car today.</p><div class="arrow">&#8594; wrautosales.com</div></div>
     </a>
     <div class="family-card" style="border-top-color:var(--green);">
@@ -333,9 +357,9 @@
   <div class="contact-grid">
     <div class="contact-info">
       <p style="color:var(--gray-light);line-height:1.7;max-width:400px;margin-bottom:0.5rem;">Whether you need a full paint job, collision repair, or heavy equipment painting &mdash; reach out and we will find the best solution for your vehicle.</p>
-      <div class="contact-item"><h4>Phone</h4><a href="tel:+17814474571">(781) 447-4571</a></div>
-      <div class="contact-item"><h4>Email</h4><a href="/cdn-cgi/l/email-protection#d2bbbcb4bd92a5a0b0bbb5a0bbb5a1fcb1bdbf"><span class="__cf_email__" data-cfemail="036a6d656c437471616a64716a64702d606c6e">contact@wrbigrig.com</span></a></div>
-      <div class="contact-item"><h4>Location</h4><p>Whitman, Massachusetts</p></div>
+      <div class="contact-item"><h4>Phone</h4><a href="tel:+17815241182">(781) 524-1182</a></div>
+      <div class="contact-item"><h4>Email</h4><a href="/cdn-cgi/l/email-protection#d2bbbcb4bd92a5a0b0bbb5a0bbb5a1fcb1bdbf"><span class="__cf_email__" data-cfemail="036a6d656c437471616a64716a64702d606c6e">[email&#160;protected]</span></a></div>
+      <div class="contact-item"><h4>Location</h4><p>South Shore Area, Massachusetts</p></div>
       <div class="contact-item"><h4>Hours</h4><p>Mon&ndash;Fri: 8AM &ndash; 6PM &nbsp;|&nbsp; Saturday: 9AM &ndash; 2PM</p></div>
       <img src="src/images/tractorpostpaintingback_wr.jpeg" alt="Our shop" style="width:100%;height:180px;object-fit:cover;filter:brightness(0.75);margin-top:0.5rem;">
     </div>
@@ -351,32 +375,30 @@
 </section>
 
 <footer>
-  <div class="footer-logo"><img src="src/images/logowrbigrigs.png" alt="WR Big Rig" style="height:150px;width:auto;display:block;"></div>
+  <div class="footer-logo"><img src="src/images/logowrbigrigs.png" alt="WR Big Rig" style="height:32px;width:auto;display:block;"></div>
   <ul class="footer-links"><li><a href="#services">Services</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#process">Process</a></li><li><a href="#contact">Contact</a></li></ul>
-  <div class="footer-copy">&copy; 2025 WR Big Rig. All rights reserved.</div>
+  <div class="footer-copy">&copy; 2025 WR Big Rig. Formerly M&amp;R Truck &amp; Equipment Refinish. All rights reserved.</div>
 </footer>
 
-
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  function openLightbox(src) {
-    document.getElementById('lightbox-img').src = src;
-    document.getElementById('lightbox').classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeLightbox() {
-    document.getElementById('lightbox').classList.remove('open');
-    document.body.style.overflow = '';
-  }
-  document.addEventListener('keydown', function(e) { if(e.key==='Escape') closeLightbox(); });
-  function filterGallery(cat, btn) {
-    document.querySelectorAll('.filter-btn').forEach(function(b){b.classList.remove('active');});
-    btn.classList.add('active');
-    document.querySelectorAll('.gallery-item').forEach(function(item){
-      if(cat==='all' || item.dataset.cat===cat) { item.classList.remove('hidden'); }
-      else { item.classList.add('hidden'); }
-    });
-  }
-  </script>
-  </body>
-  </html>
-  
+function openLightbox(src) {
+  document.getElementById('lightbox-img').src = src;
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function(e) { if(e.key==='Escape') closeLightbox(); });
+function filterGallery(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(function(b){b.classList.remove('active');});
+  btn.classList.add('active');
+  document.querySelectorAll('.gallery-item').forEach(function(item){
+    if(cat==='all' || item.dataset.cat===cat) { item.classList.remove('hidden'); }
+    else { item.classList.add('hidden'); }
+  });
+}
+</script>
+</body>
+</html>
